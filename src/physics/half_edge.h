@@ -47,9 +47,9 @@ public:
 	~HalfEdgeMesh();
 	void clear();
 
-	const std::vector<vec3>&			vertices		() const;
+	const std::vector<vec3>&		vertices		() const;
 	const std::vector<unsigned>&		indices			() const;
-	const std::vector<unsigned>&		render_indices	() const;
+	const std::vector<unsigned>&		render_indices		() const;
 	const std::vector<HalfEdgeFace*>&	faces			() const;
 
 
@@ -72,7 +72,7 @@ public:
 
 
 private:
-	std::vector<vec3>			m_vertices;
+	std::vector<vec3>		m_vertices;
 	std::vector<unsigned>		m_render_indices;
 	std::vector<unsigned>		m_indices;
 	std::vector<HalfEdgeFace*>	m_faces;
